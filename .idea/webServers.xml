@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="fb8fd999-d4a9-462e-84b4-98025dd84e16" name="server" url="http://web.sctechnik.de">
+        <fileTransfer rootFolder="/dev.benefit-gmbh.de/contao413" host="web.sctechnik.de" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
