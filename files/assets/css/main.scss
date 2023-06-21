@@ -1,0 +1,69 @@
+@import "variables";
+.banner-image {
+  position: relative;
+}
+
+.header-image {
+  img {
+    width: 100%;
+  }
+}
+
+.teaser-text {
+  position: absolute;
+  font-size: 30px;
+  bottom: 13vw;
+  right: 45vw;
+  color: #003F74;
+  h1 {
+    font: normal normal 600 60px/27px Merriweather Sans;
+    text-transform: uppercase;
+  }
+  p {
+    font: normal normal normal 30px/40px Merriweather Sans;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: $max-width;
+  margin: 68px auto;
+}
+
+.block-box {
+  width: 30%;
+  text-align: center;
+  color: $darkblue;
+  h3 {
+    font: normal normal bold 30px/40px Merriweather Sans;
+  }
+}
+
+.benefit{
+  background: url("/files/assets/layout/bg_blue.svg") center top 0/cover no-repeat;
+  height: 900px;
+  position: relative;
+  margin: 15px 0;
+}
+
+.benefit-teaser {
+  width: 90%;
+  margin: 0 auto;
+  max-width: $max-width;
+}
+
+.benefit-teaser {
+  margin: 105px auto;
+  h2 {
+    text-align: center;
+    color: $darkblue;
+  }
+  p {
+    color: $darkblue;
+    max-width: 766px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
