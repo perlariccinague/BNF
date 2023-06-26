@@ -1,3 +1,5 @@
+@import "variables";
+
 body {
   font-family: 'Merriweather Sans', serif;
 }
@@ -19,6 +21,14 @@ p, ul {
 }
 
 h2 {
-  font: normal normal bold 40px/30px Merriweather Sans;
+  font: normal normal bold 40px/50px Merriweather Sans;
   text-transform: uppercase;
 }
+
+.benefit-teaser, .benefit-box,
+.news, .contact-partner, .privacy {
+  width: 90%;
+  margin: 0 auto;
+  max-width: $max-width;
+}
+

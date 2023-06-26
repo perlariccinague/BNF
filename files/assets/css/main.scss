@@ -24,7 +24,7 @@
   }
 }
 
-.content {
+.content, .content-benefit {
   display: flex;
   justify-content: space-between;
   width: 90%;
@@ -48,12 +48,7 @@
   z-index: 4;
 }
 
-.benefit-teaser, .benefit-box,
-.news, .contact-partner {
-  width: 90%;
-  margin: 0 auto;
-  max-width: $max-width;
-}
+
 
 .benefit-teaser {
   margin: 105px auto;
@@ -101,6 +96,18 @@
   }
 }
 
+.btn.project {
+  transform: translateY(-60px);
+  a {
+    border: 2px solid $blue;
+    color: $blue;
+    &:hover {
+      background-color: $blue;
+      color: white;
+    }
+  }
+}
+
 .bg-white {
   background: url("/files/assets/layout/Pfad weiss.svg") center top 0/cover no-repeat;
   position: relative;
@@ -110,10 +117,10 @@
 }
 
 .news {
-  margin: 129px auto 0;
+  margin: 100px auto 0;
   display: flex;
   justify-content: space-between;
-  padding: 140px 0;
+  padding: 100px 0;
   .deadline {
     width: 45%;
     h2 {
@@ -211,7 +218,7 @@
   margin-top: -100px;
   .ce_sliderStart {
     position: relative;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 100px 0;
     h2 {
@@ -225,12 +232,82 @@
         .image_container {
           text-align: center;
         }
+        .ce_text {
+          color: $darkblue;
+          text-align: center;
+        }
       }
     }
     .slider-control {
+      position: absolute;
+      transform: translateY(-50%);
+      width: 100%;
+      top: 50%;
       .slider-menu {
         display: none;
       }
+      .slider-prev {
+        left: 5%;
+      }
+      .slider-next {
+        right: 5%;
+      }
+      .slider-prev, .slider-next {
+        transition: filter 250ms;
+        img {
+          width: 60px;
+        }
+        &:hover{
+          filter: brightness(0) saturate(100%) invert(66%) sepia(81%) saturate(1508%)
+                  hue-rotate(180deg) brightness(91%) contrast(92%);
+        }
+      }
     }
+  }
+}
+
+.content-benefit {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.image-left{
+  width: 25%;
+  text-align: center;
+  img {
+    width: 200px;
+  }
+}
+.text-right {
+  width: 65%;
+  color: $darkblue;
+}
+
+.benefit.new {
+  height: auto;
+}
+
+.promotion {
+  width: 90%;
+  max-width: $max-width;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px auto;
+  padding: 30px 0 80px;
+  .text-left {
+    width: 65%;
+    color: $darkblue;
+  }
+  .image-right {
+    width: 25%;
+    text-align: center;
+    img {
+      width: 200px;
+    }
+  }
+  .text-left.white {
+    color: white;
   }
 }
