@@ -26,9 +26,14 @@ h2 {
 }
 
 .benefit-teaser, .benefit-box,
-.news, .contact-partner, .privacy {
+.news, .contact-partner,
+.privacy, .menu-nav {
   width: 90%;
   margin: 0 auto;
   max-width: $max-width;
+}
+
+html.mobile_menu_active {
+  overflow-y: hidden;
 }
 

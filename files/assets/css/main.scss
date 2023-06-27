@@ -6,6 +6,9 @@
 .header-image {
   img {
     width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: 0 0;
   }
 }
 
@@ -30,6 +33,7 @@
   width: 90%;
   max-width: $max-width;
   margin: 68px auto;
+  flex-wrap: wrap;
 }
 
 .block-box {
@@ -68,6 +72,7 @@
   margin: 60px auto;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   .ce_image.image-text.block {
     width: 18%;
     .caption {
@@ -309,5 +314,103 @@
   }
   .text-left.white {
     color: white;
+  }
+}
+
+.privacy {
+  margin: 40px auto;
+  h2 {
+    color: $darkblue;
+    text-align: center;
+  }
+  p {
+    color: $darkblue;
+    strong {
+      text-transform: uppercase;
+    }
+    a {
+      color: $blue;
+      transition: opacity 250ms;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+#progress {
+  position: fixed;
+  bottom: 75px;
+  right: 130px;
+  height: 70px;
+  width: 70px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 105;
+}
+
+#progress-value {
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  img {
+    width: 25px;
+    transition: filter  250ms;
+    &:hover {
+      filter: brightness(0) saturate(100%) invert(68%) sepia(32%) saturate(2014%) hue-rotate(180deg);
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .header-image {
+    img {
+      object-position: right 0;
+    }
+  }
+  .teaser-text {
+    right: 50%;
+    transform: translateX(50%);
+    color: white;
+    width: 100%;
+    text-align: center;
+    h1 {
+      font: normal normal 600 27px/30px Merriweather Sans;
+    }
+    p {
+      font: normal normal normal 25px/25px Merriweather Sans;
+    }
+  }
+  .content {
+    margin: 45px auto;
+  }
+  .block-box {
+    width: 100%;
+    margin: 30px auto;
+  }
+  .benefit {
+    padding: 100px 0 150px;
+    height: auto;
+  }
+  .benefit-teaser {
+    margin: 40px auto;
+  }
+  .benefit-box {
+    margin: 35px auto;
+    .ce_image.image-text.block {
+      width: 100%;
+      margin: 15px auto;
+      .image_container {
+        text-align: center;
+        .caption {
+          margin: 25px auto 0;
+        }
+      }
+    }
   }
 }
