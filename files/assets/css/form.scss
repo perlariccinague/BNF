@@ -1,0 +1,54 @@
+@import "variables";
+
+.contact-form {
+  max-width: $max-width;
+  margin: 30px auto;
+}
+/*.contact-form {
+  margin: 30px auto;
+}*/
+
+.contact-form .formbody .widget-text,
+.contact-form .formbody .widget-textarea {
+  margin: 15px 0;
+}
+
+.contact-form .formbody input[name="name"],
+.contact-form .formbody textarea[name="nachricht"],
+.contact-form .formbody input[name="e-mail"],
+.contact-form .formbody input[name="telefon"]{
+  background-color: $blue;
+  border: 0;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  width: 90%;
+  padding: 15px 10px;
+  outline: none;
+  font-family: "Merriweather",sans-serif;
+  letter-spacing: .5px;
+  border-radius: 20px;
+  transition: background-color 250ms;
+  &:hover {
+    background:$darkblue;
+  }
+}
+
+#container ::placeholder {
+  opacity: 1;
+  color: white;
+}
+.contact-form .submit {
+  border: 2px solid #5DA4DF;
+  border-radius: 25px;
+  padding: 8px 15px;
+  color: #5DA4DF;
+  font: normal normal normal 20px/34px Merriweather Sans;
+  transition: background-color 250ms, color 250ms;
+  text-transform: uppercase;
+  background-color: white;
+  &:hover {
+    background-color: $darkblue;
+    color: white;
+  }
+}

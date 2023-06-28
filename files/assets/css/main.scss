@@ -236,6 +236,9 @@
       .layout_short {
         .image_container {
           text-align: center;
+          img {
+            border-radius: 50%;
+          }
         }
         .ce_text {
           color: $darkblue;
@@ -263,8 +266,7 @@
           width: 60px;
         }
         &:hover{
-          filter: brightness(0) saturate(100%) invert(66%) sepia(81%) saturate(1508%)
-                  hue-rotate(180deg) brightness(91%) contrast(92%);
+          filter: $filter;
         }
       }
     }
@@ -317,7 +319,7 @@
   }
 }
 
-.privacy {
+.privacy, .mod_newsreader {
   margin: 40px auto;
   h2 {
     color: $darkblue;
@@ -335,6 +337,9 @@
         opacity: 0.6;
       }
     }
+  }
+  .info {
+    color: $blue;
   }
 }
 
@@ -362,7 +367,7 @@
     width: 25px;
     transition: filter  250ms;
     &:hover {
-      filter: brightness(0) saturate(100%) invert(68%) sepia(32%) saturate(2014%) hue-rotate(180deg);
+      filter: $filter;
     }
   }
 }
@@ -386,6 +391,7 @@
       font: normal normal normal 25px/25px Merriweather Sans;
     }
   }
+
   .content {
     margin: 45px auto;
   }
@@ -393,6 +399,7 @@
     width: 100%;
     margin: 30px auto;
   }
+
   .benefit {
     padding: 100px 0 150px;
     height: auto;
@@ -411,6 +418,65 @@
           margin: 25px auto 0;
         }
       }
+    }
+  }
+
+  .news {
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 70px 0;
+    .deadline {
+      width: 100%;
+    }
+  }
+
+  .contact-partner {
+    margin: 80px auto;
+    flex-wrap: wrap;
+    .ce_text, .ce_image {
+      width: 100%;
+    }
+    .ce_text {
+      .button {
+        text-align: center;
+      }
+    }
+  }
+
+  .reference .ce_sliderStart {
+    .content-slider {
+      width: 85%;
+      margin: 60px auto;
+    }
+    .slider-control {
+      top: 85%;
+      transform: translateY(0);
+      .slider-prev {
+        left: 25%;
+      }
+      .slider-next {
+        right: 25%;
+      }
+    }
+  }
+  .btn.project {
+    transform: translateY(-35px);
+    padding: 35px 0;
+  }
+
+  #progress {
+    display: none;
+  }
+
+  .image-left, .text-right {
+    width: 100%;
+  }
+
+  .promotion {
+    margin: 50px auto;
+    flex-wrap: wrap;
+    .text-left, .image-right {
+      width: 100%;
     }
   }
 }

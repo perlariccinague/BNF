@@ -18,17 +18,20 @@
     .header-left {
       .logo-header {
         img {
-          width: 540px;
+          width: 400px;
         }
       }
     }
     .header-right {
       .mobile_menu_trigger {
         cursor: pointer;
-        /*margin-top: 20px;*/
         display: block;
         img {
           width: 70px;
+          transition: opacity 250ms;
+          &:hover {
+            filter: $filter;
+          }
         }
       }
     }

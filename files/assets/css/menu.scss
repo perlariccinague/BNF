@@ -98,7 +98,7 @@
       width: 40px;
       transition: filter  250ms;
       &:hover {
-        filter: brightness(0) saturate(100%) invert(68%) sepia(32%) saturate(2014%) hue-rotate(180deg);
+        filter: $filter;
       }
     }
   }
