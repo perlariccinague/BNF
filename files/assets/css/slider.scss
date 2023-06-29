@@ -84,15 +84,12 @@
         width: 60px;
       }
       &:hover{
-        &:hover{
-          filter: $filter;
-        }
+        filter: $filter;
       }
     }
     .slider-menu {
       display: none;
     }
-
   }
 }
 
