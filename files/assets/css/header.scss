@@ -28,9 +28,9 @@
         display: block;
         img {
           width: 70px;
-          transition: opacity 250ms;
+          transition: transform 250ms;
           &:hover {
-            filter: $filter;
+            transform: scale(0.8);
           }
         }
       }

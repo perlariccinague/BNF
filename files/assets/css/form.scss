@@ -3,10 +3,8 @@
 .contact-form {
   max-width: $max-width;
   margin: 30px auto;
+  padding-bottom: 50px;
 }
-/*.contact-form {
-  margin: 30px auto;
-}*/
 
 .contact-form .formbody .widget-text,
 .contact-form .formbody .widget-textarea {
@@ -51,4 +49,8 @@
     background-color: $darkblue;
     color: white;
   }
+}
+
+@media screen and (max-width: 540px){
+
 }

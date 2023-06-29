@@ -25,10 +25,10 @@ h2 {
   text-transform: uppercase;
 }
 
-.benefit-teaser, .benefit-box,
+/*.benefit-teaser, .benefit-box,*/.benefit-contain,
 .news, .contact-partner,
 .privacy, .menu-nav,
-.mod_newsreader {
+.mod_newsreader, .contact-form {
   width: 90%;
   margin: 0 auto;
   max-width: $max-width;
@@ -36,6 +36,12 @@ h2 {
 
 html.mobile_menu_active {
   overflow-y: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  h2 {
+    font: normal normal bold 30px/40px Merriweather Sans;
+  }
 }
 
 @media screen and (max-width: 540px) {

@@ -22,7 +22,7 @@
     justify-content: space-between;
     margin: 100px auto;
     flex-wrap: wrap;
-    padding: 150px 0;
+    padding: 80px 0;
   }
 }
 
@@ -30,25 +30,24 @@
 .navigation-middle-right, .navigation-right {
   width: 23%;
   h2 {
-    font: normal normal normal 24px/56px Merriweather Sans;
+    font: normal normal normal 24px/36px Merriweather Sans;
     color: white;
     text-transform: uppercase;
     border-bottom: 3px solid $blue;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
   }
   ul {
-    font: normal normal 300 20px/40px Merriweather Sans;
+    font: normal normal 300 20px/30px Merriweather Sans;
     li {
       text-transform: uppercase;
       margin: 6px auto;
-      a {
+      a, strong {
         color: white;
         text-decoration: none;
         outline: none;
         position: relative;
-        margin-left: -13px;
+        margin-left: 0px;
         transition: color 250ms;
         &:before {
           color: #5DA4DF;
@@ -56,7 +55,7 @@
           content: "»";
           position: absolute;
           font-size: 20px;
-          top: -9px;
+          top: -3px;
           left: -26px;
         }
         &:hover {
@@ -64,7 +63,7 @@
         }
       }
       strong {
-        color: white;
+        color: $blue;
       }
     }
   }
@@ -100,6 +99,33 @@
       &:hover {
         filter: $filter;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .menu-nav {
+    margin: 0 auto;
+
+    .menu-top {
+      padding: 0;
+      margin: 0 auto 42px;
+
+      .navigation-left, .navigation-middle,
+      .navigation-middle-right, .navigation-right {
+        width: 100%;
+      }
+    }
+    .menu-bottom {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .mobile_menu .inner .header-right .menu-close {
+    img {
+      width: 50px;
     }
   }
 }
