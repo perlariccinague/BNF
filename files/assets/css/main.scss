@@ -36,13 +36,46 @@
   flex-wrap: wrap;
 }
 
+.mod_article .ce_image {
+  text-align: center;
+}
+
 .block-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 30%;
   text-align: center;
   color: $darkblue;
   h3 {
     font: normal normal bold 30px/40px Merriweather Sans;
   }
+  .block-link-icon {
+    margin-top: auto;
+    a {
+      width: 100px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.mod_article:not(.banner-image) .ce_text.fazit {
+  margin-top: -50px;
+  p {
+    padding-left: 20px;
+    border-left: 50px solid #5da4df;
+    font-weight: bold;
+  }
+}
+
+.mod_article:not(.banner-image) .ce_text.kurzinfo {
+  text-align: center;
+  margin-bottom: -40px;
+  color: #5DA4DF;
+  margin-top: 0;
+  font-weight: bold;
+  background: url('../layout/quotes.svg') no-repeat 30% 0/80px;
 }
 
 .benefit {
@@ -50,6 +83,26 @@
   height: auto;
   position: relative;
   z-index: 4;
+}
+
+.mod_article:not(.banner-image) .ce_text {
+  width: 90%;
+  max-width: 1100px;
+  margin: 80px auto;
+  color: $darkblue;
+}
+
+.mod_article .ce_headline {
+  text-align: center;
+  color: #003f74;
+  margin-bottom: 0;
+  margin-top: 100px;
+}
+
+.mod_article.bg-darkblue .ce_text {
+  p,h2 {
+    color: white;
+  }
 }
 
 .benefit-contain {
@@ -73,7 +126,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     .ce_image.image-text.block {
-      width: 18%;
+      width: 16%;
       .caption {
         font: normal normal bold 22px/34px Merriweather Sans;
         text-transform: uppercase;
@@ -227,6 +280,15 @@
   }
 }
 
+.mod_newslist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .layout_short {
+    width: 45%;
+  }
+}
+
 .bg-darkblue{
   background: url("/files/assets/layout/bg_darkblue.svg") center top 0/cover no-repeat;
   height:auto;
@@ -362,6 +424,38 @@
       filter: $filter;
     }
   }
+}
+
+.mod_article:not(.banner-image) .ce_text.apply-now-button {
+  width: 200px;
+  text-align: center;
+  border: 2px solid #6aabe1;
+  border-radius: 30px;
+}
+
+.mod_article:not(.banner-image) .ce_text.apply-now-button p {
+  margin: 0;
+}
+
+.mod_article:not(.banner-image) .ce_text.apply-now-button p a {
+  padding: 20px;
+  display: block;
+  transition: background-color 250ms;
+  &:hover {
+    background: #6aabe130;
+  }
+}
+
+.mod_article:not(.banner-image) .ce_text ul li {
+  list-style: disc;
+}
+
+.ce_accordion .ce_text.btn.project {
+  margin-bottom: 0;
+}
+
+.mod_article:not(.banner-image) .ce_accordion .ce_text {
+  margin-top: 0;
 }
 
 @media screen and (max-width: 1000px) {

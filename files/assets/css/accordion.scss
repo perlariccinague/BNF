@@ -1,0 +1,29 @@
+.ce_accordion {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+  .toggler {
+    position: relative;
+    border: 2px solid #5da4df;
+    border-radius: 30px;
+    padding: 20px 75px;
+    color: #003f74;
+    font-size: 21px;
+    cursor: pointer;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 30px;
+      width: 32px;
+      height: 25px;
+      background: url("../layout/accordion-arrow-down.svg") no-repeat 0/contain;
+      transition: transform 250ms;
+    }
+    &.active:before {
+      transform: rotate(180deg);
+    }
+  }
+  .accordion {
+    padding: 50px;
+  }
+}

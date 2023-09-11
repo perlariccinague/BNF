@@ -1,0 +1,61 @@
+.team-box-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .team-box {
+    position: relative;
+    width: 24%;
+    height: 231px;
+    margin: 8px 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 0 -40px;
+    }
+    .team-box-backside {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      opacity: 0;
+      transition: opacity 250ms;
+      color: white;
+      z-index: 50;
+      a {
+        color: #5DA4DF;
+      }
+      h3 {
+        font-size: 16px;
+        margin: 4px 0;
+      }
+      p {
+        font-size: 13px;
+        margin: 0;
+      }
+      .team-box-email {
+        font-size: 13px;
+      }
+    }
+    .team-box-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: rgba(0,0,0,.75);
+      z-index: 25;
+      opacity: 0;
+      transition: opacity 250ms;
+    }
+    &:hover {
+      .team-box-backside,.team-box-overlay {
+        opacity: 1;
+      }
+    }
+  }
+}
