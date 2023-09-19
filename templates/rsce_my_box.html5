@@ -5,7 +5,7 @@
         <div class="description">
             <div class="teaser">
                 <h3><?= $this->text  ?></h3>
-                <p><?= $this->description ?></p>
+                <?= $this->description ?>
             </div>
         </div>
     </div>

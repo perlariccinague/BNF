@@ -1,4 +1,72 @@
-.ce_accordion {
+.mod_article#Ihr-Benefit {
+  .ce_accordion {
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+    .toggler {
+      position: relative;
+      padding: 30px 110px;
+      color: #003f74;
+      font-size: 21px;
+      cursor: pointer;
+      background-image: linear-gradient(to left, #B6D1E8, #5DA4DF);
+      user-select: none;
+      font-weight: bold;
+      border-radius: 0;
+      border: none;
+      text-transform: uppercase;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 16px;
+        left: 22px;
+        height: 55px;
+        width: 55px;
+        filter: brightness(0) invert(1);
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        right: 30px;
+        top: 19px;
+        width: 50px;
+        height: 50px;
+        background: url('../layout/Akkordeon.svg') no-repeat 0/cover;
+      }
+      &.active:after {
+        background: url('../layout/Akkordeon-close.svg') no-repeat 0/cover;
+      }
+    }
+    .accordion {
+      padding: 5px 110px;
+      background-image: linear-gradient(to left, #B6D1E8, #5DA4DF);
+    }
+    &:nth-child(3) .toggler:before {
+      background: url("../layout/Network.svg") no-repeat 0/contain;
+    }
+    &:nth-child(4) .toggler:before {
+      background: url("../layout/Trophy.svg") no-repeat 0/contain;
+    }
+    &:nth-child(5) .toggler:before {
+      background: url("../layout/Avatar.svg") no-repeat 0/contain;
+    }
+    &:nth-child(6) .toggler:before {
+      background: url("../layout/Clock.svg") no-repeat 0/contain;
+    }
+    &:nth-child(7) .toggler:before {
+      background: url("../layout/Shield.svg") no-repeat 0/contain;
+    }
+    &:nth-child(8) .toggler:before {
+      background: url("../layout/Euro-Sign-White.svg") no-repeat 0/contain;
+    }
+  }
+  h2 ~ .ce_accordion .toggler:before {
+    background: url("../layout/Unternehmen.svg") no-repeat 0/contain;
+  }
+}
+
+
+.mod_article:not(#Ihr-Benefit,.banner-image) .ce_accordion {
   width: 90%;
   max-width: 1100px;
   margin: 40px auto;
@@ -27,3 +95,6 @@
     padding: 50px;
   }
 }
+
+
+

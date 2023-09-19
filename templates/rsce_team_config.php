@@ -26,6 +26,10 @@ return array(
         'email' => array(
             'label' => array('E-Mail', 'Beschreibung...'),
             'inputType' => 'text'
+        ),
+        'phone' => array(
+            'label' => array('Telefon', 'Beschreibung...'),
+            'inputType' => 'text'
         )
     )
 );

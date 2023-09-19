@@ -19,14 +19,14 @@ return array(
             'eval' => array('filesOnly' => true),
             'inputType' => 'fileTree'
         ),
-        'url' => array(
+        'link' => array(
             'label' => array('Link', 'Beschreibung...'),
-            'inputType' => 'url',
+            'inputType' => 'text'
         ),
         'description' => array(
             'label' => array('Text', 'Beschreibung...'),
             'eval' => array('rte' => 'tinyMCE'),
             'inputType' => 'textarea',
-        ),
+        )
     ),
 );

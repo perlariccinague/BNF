@@ -1,9 +1,10 @@
 <div class="team-box">
     <img src="{{file::<?= $this->photo ?>}}" alt="">
+    <h3><?= $this->name ?></h3>
+    <p><?= $this->position ?></p>
     <div class="team-box-backside">
-        <h3><?= $this->name ?></h3>
-        <p><?= $this->position ?></p>
         <div class="team-box-email"><a href="mailto:<?= $this->email ?>"><?= $this->email ?></a></div>
+        <div class="team-box-email"><a href="tel:<?= $this->phone ?>"><?= $this->phone ?></a></div>
     </div>
     <div class="team-box-overlay"></div>
 </div>

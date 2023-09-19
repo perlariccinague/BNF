@@ -33,15 +33,19 @@
     font: normal normal normal 24px/36px Merriweather Sans;
     color: white;
     text-transform: uppercase;
-    border-bottom: 3px solid $blue;
     padding-bottom: 15px;
     margin-bottom: 15px;
+    border-bottom: 1px solid white;
+    font-size: 18px;
+    font-weight: 300;
   }
   ul {
     font: normal normal 300 20px/30px Merriweather Sans;
+    padding-left: 25px;
     li {
       text-transform: uppercase;
       margin: 6px auto;
+      font-size: 17px;
       a, strong {
         color: white;
         text-decoration: none;
@@ -74,7 +78,7 @@
   justify-content: center;
   border-top: 3px solid $blue;
   padding-top: 30px;
-  align-items: center ;
+  align-items: center;
   a {
     width: 90px;
     text-align: center;

@@ -2,5 +2,5 @@
     <img src="{{file::<?= $this->image ?>}}" alt="">
     <h3><?= $this->titel ?></h3>
     <p><?= $this->description ?></p>
-    <div class="block-link-icon"><a href="{{link_url::<?= $this->link ?>}}"><img src="files/assets/layout/arrow-right-white-on-blue.svg"></a></div>
+    <div class="block-link-icon"><a href="{{link_url::<?= $this->link ?>}}#<?= $this->anchor ?>"><img src="files/assets/layout/arrow-right-white-on-blue.svg"></a></div>
 </div>

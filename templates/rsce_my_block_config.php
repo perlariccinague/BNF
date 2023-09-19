@@ -25,10 +25,13 @@ return array(
             'eval' => array('rte' => 'tinyMCE'),
             'inputType' => 'textarea',
         ),
-
         'link' => array(
-            'label' => array('Link', 'Wohin soll diese Box verlinken?'),
+            'label' => array('Link', 'Auf welche Seite soll diese Box verlinken?'),
             'inputType' => 'pageTree'
         ),
+        'anchor' => array(
+            'label' => array('Anker', 'Welcher Unterpunkt auf der Seite soll automatisch angesteuert werden?'),
+            'inputType' => 'text'
+        )
     )
 );
