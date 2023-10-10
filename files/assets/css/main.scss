@@ -45,6 +45,11 @@
   }
 }
 
+#teaser-bottom {
+  top: 70%;
+  text-shadow: 2px 2px 11px #000000D9;
+}
+
 .content, .content-benefit {
   display: flex;
   justify-content: space-between;
@@ -321,7 +326,7 @@
         content: '30% kürzere Bearbeitungszeiten';
       }
       &:nth-child(6):after {
-        content: 'Lücken- und Fehlerlose Projekt-dokumentation';
+        content: 'Lücken- und fehlerlose Projekt-dokumentation';
       }
       &:nth-child(7):after {
         content: 'Beratungshonorar nur bei Förderung';
@@ -450,6 +455,7 @@
   .ce_text {
     margin-top: -20px;
     color: $darkblue;
+    margin-bottom: 20px;
     ul {
       li {
         position: relative;
@@ -462,6 +468,7 @@
           left: -22px;
           margin-top: 10px;
           background: url("/files/assets/layout/dot.svg") no-repeat 0/cover;
+          display: none;
         }
       }
     }
@@ -600,6 +607,36 @@
   }
 }
 
+.mod_newsreader .layout_full p strong {
+  text-transform: lowercase;
+}
+
+#contact {
+  margin: 0 auto;
+  p {
+    text-align: center;
+
+  }
+}
+
+.privacy, .mod_newsreader {
+  p.back {
+    a {
+      position: relative;
+      margin-left: 35px;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        left: -45px;
+        background: url("/files/assets/layout/Arrow_left_blue1.svg") no-repeat 0/cover;
+        top: -9px;
+      }
+    }
+  }
+}
+
 #progress {
   position: fixed;
   bottom: 75px;
@@ -697,17 +734,19 @@
 }
 
 @media screen and (max-width: 540px) {
-/*  .header-image {
+  .header-image {
     img {
-      object-position: right 0;
+      height: 45vh;
+      object-position: center 0;
     }
-  }*/
+  }
   .teaser-text {
     left: 50%;
     transform: translateX(-50%);
     color: white;
     width: 100%;
     text-align: center;
+    top: 35%;
     h1 {
       font: normal normal 600 27px/30px Merriweather Sans;
     }
@@ -771,7 +810,7 @@
   }
 
   .contact-partner {
-    margin: 80px auto;
+    margin: 20px auto 50px;
     flex-wrap: wrap;
     .ce_text, .ce_image {
       width: 100%;
@@ -781,11 +820,6 @@
         text-align: center;
       }
     }
-  }
-
-  .btn.project {
-    transform: translateY(-35px);
-    padding: 35px 0;
   }
 
   #progress {
@@ -802,6 +836,52 @@
     padding: 30px 0;
     .text-left, .image-right {
       width: 100%;
+    }
+  }
+  .mod_newslist .layout_short {
+    width: 100%;
+  }
+
+  .contact-partner .ce_text p a,
+  .mod_article:not(.banner-image) .mod_newslist .more a, .mod_eventlist .more a{
+    font: normal normal normal 17px/25px Merriweather Sans;
+    display: inline-block;
+  }
+
+  .mod_article .ce_headline {
+    margin: 50px auto 30px;
+  }
+
+  .benefit-contain {
+    margin: 60px auto;
+  }
+
+  .mod_article:not(.banner-image) .mod_newslist .ce_text, .mod_eventlist .ce_text {
+    margin-top: 20px;
+  }
+  .mod_article:not(.banner-image) .ce_text.btn.project {
+    margin: 0 auto 0;
+    transform: translateY(-15px);
+    padding: 35px 0;
+  }
+  .mod_article:not(.banner-image).beratungsfeld:nth-child(3),
+  .mod_article:not(.banner-image).beratungsfeld:nth-child(5),
+  .mod_article:not(.banner-image).beratungsfeld:nth-child(7){
+    padding: 80px 0 175px;
+  }
+  .mod_article:not(.banner-image).beratungsfeld {
+    margin: 0 auto 20px;
+  }
+  #Innovationsförderung, #Investitionsförderung,
+  #Netzwerkentwicklung, #Projektmanagement,
+  #Innovationsstrategien {
+    .ce_text {
+      img {
+        width: 65px;
+      }
+      h2 {
+        font-size: 18px;
+      }
     }
   }
 }

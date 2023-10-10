@@ -12,7 +12,9 @@ return array(
     'fields' => array(
         'text' => array(
             'label' => array('Title', 'Beschreibung...'),
-            'inputType' => 'text',
+            'eval' => array('rte' => 'tinyMCE'),
+            'inputType' => 'textarea',
+
         ),
         'icon' => array(
             'label' => array('Icon', 'Beschreibung...'),
@@ -23,10 +25,10 @@ return array(
             'label' => array('Link', 'Beschreibung...'),
             'inputType' => 'text'
         ),
-        'description' => array(
+        /*'description' => array(
             'label' => array('Text', 'Beschreibung...'),
             'eval' => array('rte' => 'tinyMCE'),
             'inputType' => 'textarea',
-        )
+        )*/
     ),
 );

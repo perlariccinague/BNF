@@ -105,10 +105,13 @@
   .reference .ce_sliderStart {
     .content-slider {
       width: 85%;
-      margin: 60px auto;
+      margin: 0 auto;
+      .layout_short .ce_text {
+        width: 100%;
+      }
     }
     .slider-control {
-      top: 85%;
+      top: 90%;
       transform: translateY(0);
       .slider-prev {
         left: 25%;
@@ -128,5 +131,8 @@
         object-position: center;
       }
     }
+  }
+  .reference {
+    margin-top: 0;
   }
 }

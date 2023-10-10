@@ -1,11 +1,9 @@
 <a class="benefits-link" <?= $this->url ?>>
     <div class="box">
-        <!--<img src="{{file::<?/*= $this->icon */?>}}">-->
         <h3><?= $this->text  ?></h3>
         <div class="description">
             <div class="teaser">
-                <h3><?= $this->text  ?></h3>
-                <?= $this->description ?>
+                <img src="{{file::<?= $this->icon ?>}}">
             </div>
         </div>
     </div>

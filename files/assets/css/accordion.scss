@@ -96,5 +96,24 @@
   }
 }
 
+@media screen and (max-width: 540px) {
+  .mod_article#Ihr-Benefit .ce_accordion .toggler {
+    padding: 30px 70px;
+    font-size: 18px;
+    &:before {
+      left: 15px;
+      height: 40px;
+      width: 40px;
+      top: 30px;
+    }
+    &:after {
+      width: 34px;
+      height: 34px;
+      right: 15px;
+      top: 25px;
+    }
+  }
+}
+
 
 

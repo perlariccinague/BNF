@@ -2,30 +2,65 @@
 
 .contact-form {
   max-width: $max-width;
-  margin: 30px auto;
+  margin: 0 auto;
   padding-bottom: 50px;
 }
 
 .contact-form .formbody .widget-text,
 .contact-form .formbody .widget-textarea {
-  margin: 15px 0;
+  margin: 0px 0;
+  line-height: 1em;
+  label {
+    margin-left: 6px;
+    font-size: 17px;
+    span {
+      color: $darkblue;
+    }
+  }
+}
+
+.contact-form .formbody .widget-checkbox fieldset {
+  border: none;
+  span {
+    margin-left: -15px;
+    label a {
+      color: $darkblue;
+      transition: color 250ms;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}
+
+.contact-form .formbody .explanation {
+  font-style: italic;
+  font-size: 15px;
+  line-height: 0.7em;
+  margin-top: -13px;
+}
+
+.contact-form .formbody .widget-checkbox {
+  font-size: 15px;
 }
 
 .contact-form .formbody input[name="name"],
 .contact-form .formbody textarea[name="nachricht"],
 .contact-form .formbody input[name="e-mail"],
-.contact-form .formbody input[name="telefon"]{
+.contact-form .formbody input[name="telefon"],
+.contact-form .formbody input[name="firma"]{
   background-color: $blue;
   border: 0;
   color: white;
   font-size: 15px;
   cursor: pointer;
   width: 90%;
-  padding: 15px 10px;
+  padding: 8px 10px;
   outline: none;
   font-family: "Merriweather",sans-serif;
   letter-spacing: .5px;
   border-radius: 20px;
+  display: block;
   transition: background-color 250ms;
   &:hover {
     background:$darkblue;
