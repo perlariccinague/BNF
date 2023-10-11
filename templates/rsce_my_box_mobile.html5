@@ -1,0 +1,13 @@
+<div class="benefits-mobile">
+    <img src="{{file::<?= $this->icon ?>}}" >
+    <h3><?= $this->text  ?></h3>
+</div>
+
+
+
+
+
+
+
+
+

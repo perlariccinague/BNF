@@ -105,19 +105,22 @@
   .reference .ce_sliderStart {
     .content-slider {
       width: 85%;
-      margin: 0 auto;
+      margin: 0 auto 75px;
       .layout_short .ce_text {
         width: 100%;
       }
     }
     .slider-control {
-      top: 90%;
+      top: 94%;
       transform: translateY(0);
       .slider-prev {
         left: 25%;
       }
       .slider-next {
         right: 25%;
+      }
+      .slider-prev img, .slider-next img {
+        width: 40px;
       }
     }
   }
@@ -131,6 +134,10 @@
         object-position: center;
       }
     }
+  }
+
+  .slider-image.ce_sliderStart .slider-control .slider-prev img, .slider-image.ce_sliderStart .slider-control .slider-next img {
+    width: 45px;
   }
   .reference {
     margin-top: 0;
