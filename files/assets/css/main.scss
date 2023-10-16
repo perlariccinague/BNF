@@ -25,14 +25,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #002A4E;
-  &.white {
+  color: white;
+  text-shadow: 2px 2px 11px #000000D9;
+/*  &.white {
     color: white;
   }
   &.white-text {
     color: white;
-    text-shadow: 2px 2px 11px #000000D9;
-  }
+  }*/
   h1 {
     font: normal normal 600 60px/27px Merriweather Sans;
     font-size: 50px;
