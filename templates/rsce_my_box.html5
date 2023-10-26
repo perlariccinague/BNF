@@ -1,13 +1,24 @@
-<a class="benefits-link" <?= $this->url ?>>
+<!--<a class="benefits-link" <?/*= $this->url */?>>
     <div class="box">
-        <h3><?= $this->text  ?></h3>
+        <h3><?/*= $this->text  */?></h3>
         <div class="description">
             <div class="teaser">
-                <img src="{{file::<?= $this->icon ?>}}">
+                <img src="{{file::<?/*= $this->icon */?>}}">
             </div>
         </div>
     </div>
+</a>-->
+
+<a class="benefits-link <?php echo $this->class ?>" <?= $this->url ?>>
+    <div class="box">
+        <img src="{{file::<?= $this->icon ?>}}">
+        <div class="description">
+            <h3><?= $this->text  ?></h3>
+        </div>
+
+    </div>
 </a>
+
 
 
 

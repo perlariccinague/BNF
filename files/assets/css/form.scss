@@ -1,7 +1,7 @@
 @import "variables";
 
 .contact-form {
-  max-width: $max-width;
+  max-width: 950px;
   margin: 0 auto;
   padding-bottom: 50px;
 }
@@ -37,7 +37,7 @@
   font-style: italic;
   font-size: 15px;
   line-height: 0.7em;
-  margin-top: -13px;
+  margin-top: 0;
 }
 
 .contact-form .formbody .widget-checkbox {

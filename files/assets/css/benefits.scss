@@ -44,6 +44,10 @@
   }
 }
 
+.benefits-link.icon-small img {
+  width: 80px;
+}
+
 .benefits-link {
   width: 23%;
   text-decoration: none;
@@ -64,6 +68,13 @@
     font-size: 17px;
     margin: 0 auto;
     font-weight: normal;
+    width: 240px;
+    height: 240px;
+    display: grid;
+    align-items: center;
+    p {
+      margin: 0 auto;
+    }
   }
 }
 

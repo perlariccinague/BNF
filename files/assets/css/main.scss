@@ -13,7 +13,7 @@
     width: 100%;
     height: 33vh;
     object-fit: cover;
-    object-position: 100% 0;
+    object-position: center center;
   }
 }
 
@@ -33,7 +33,7 @@
   &.white-text {
     color: white;
   }*/
-  h1 {
+  h1, h2 {
     font: normal normal 600 60px/27px Merriweather Sans;
     font-size: 50px;
     margin-bottom: 10px;
@@ -312,7 +312,7 @@
         font-size: 14px;
       }
       &:nth-child(1):after {
-        content: 'Bedarfsgerechte Förderung';
+        content: 'Maßgeschneiderte Förderung';
       }
       &:nth-child(2):after {
         content: 'Passende Partner für den Erfolg';
@@ -321,16 +321,16 @@
         content: '93% Erfolgsquote';
       }
       &:nth-child(4):after {
-        content: '80% weniger admin. Aufwand';
+        content: '80 -90% weniger Aufwand';
       }
       &:nth-child(5):after {
         content: '30% kürzere Bearbeitungszeiten';
       }
       &:nth-child(6):after {
-        content: 'Lücken- und fehlerlose Projekt-dokumentation';
+        content: 'lücken- und fehlerlose Projekt-dokumentation';
       }
       &:nth-child(7):after {
-        content: 'Beratungshonorar nur bei Förderung';
+        content: 'Geringes Kostenrisiko ';
       }
       &:hover {
         figure img {
@@ -362,55 +362,6 @@
     }
   }
 }
-
-
-
-/*.benefit-teaser {
-  margin: 105px auto;
-  h2 {
-    text-align: center;
-    color: $darkblue;
-  }
-  p {
-    color: $darkblue;
-    max-width: 766px;
-    margin: 0 auto;
-    text-align: center;
-  }
-}
-
-.benefit-box {
-  margin: 60px auto;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  .ce_image.image-text.block {
-    width: 18%;
-    .caption {
-      font: normal normal bold 22px/34px Merriweather Sans;
-      text-transform: uppercase;
-      color: $darkblue;
-      text-align: center;
-    }
-  }
-}
-
-.btn {
-  text-align: center;
-  text-transform: uppercase;
-  a {
-    border: 2px solid white;
-    border-radius: 25px;
-    padding: 10px 25px;
-    color: white;
-    font: normal normal normal 22px/34px Merriweather Sans;
-    transition: background-color 250ms, color 250ms;
-    &:hover {
-      color: $blue;
-      background-color: white;
-    }
-  }
-}*/
 
 .mod_article:not(.banner-image) .ce_text.btn.project {
   margin: 150px auto 0;
@@ -584,6 +535,31 @@
   }
 }
 
+.privacy {
+  h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 60px;
+    font-size: 25px;
+    &:before {
+      position: absolute;
+      content: "";
+      left: -18px;
+      width: 30px;
+      height: 30px;
+      top: 9px;
+      background: url("/files/assets/layout/dot.svg") no-repeat;
+      background-size: 13px;
+    }
+  }
+  img {
+    filter: brightness(0) invert(58%) sepia(76%) saturate(297%) hue-rotate(173deg);
+    width: 55px;
+  }
+}
+
 .privacy, .mod_newsreader {
   margin: 40px auto;
   h2 {
@@ -712,6 +688,27 @@
   }
 }
 
+.project {
+  width: 80%;
+  max-width: 950px;
+  margin: 60px auto;
+  .layout_short {
+    margin: 0 auto 35px;
+
+    img {
+      width: 300px;
+    }
+    .ce_text {
+      width: 100%;
+      margin: 0 auto;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid #003f74;
+      padding-bottom: 15px;
+  }
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .benefit-contain {
     .benefit-box {
@@ -793,6 +790,7 @@
   .block-box {
     width: 100%;
     margin: 30px auto;
+    display: block;
   }
 
   .benefit-contain {
@@ -834,7 +832,10 @@
   }
 
   #progress {
-    display: none;
+    /*display: none;*/
+    right: 10px;
+    height: 60px;
+    width: 60px;
   }
 
   .image-left, .text-right {
