@@ -42,6 +42,42 @@ html.mobile_menu_active {
   overflow-y: hidden;
 }
 
+#container .error-image img {
+  width: 100%;
+  height: 100vh;
+}
+
+#container .error-teaser {
+  position: absolute;
+  top: 40%;
+  color: white;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1130px;
+  p {
+    color: #4c99d9;
+    font: normal normal 600 40px/53px Merriweather Sans;
+    text-transform: uppercase;
+    a {
+      display: inline-block;
+      font: normal normal 600 24px/36px Merriweather Sans;
+      color: white;
+      padding: 15px 40px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      overflow: hidden;
+      background: #2B7FC6;
+      transition: color 250ms;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1000px) {
   h2 {
     font: normal normal bold 30px/40px Merriweather Sans;
