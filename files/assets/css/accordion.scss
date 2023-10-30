@@ -59,10 +59,14 @@
     &:nth-child(8) .toggler:before {
       background: url("../layout/Euro-Sign-White.svg") no-repeat 0/contain;
     }
+    &:last-child {
+      padding-bottom: 50px;
+    }
   }
   h2 ~ .ce_accordion .toggler:before {
     background: url("../layout/Unternehmen.svg") no-repeat 0/contain;
   }
+
 }
 
 

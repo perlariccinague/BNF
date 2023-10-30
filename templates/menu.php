@@ -15,7 +15,7 @@
         <div class="navigation-left">
             {{insert_module::14}}
         </div>
-        <div class="navigation-middle">
+        <div class="navigation-middle-project">
             {{insert_module::16}}
         </div>
         <div class="navigation-middle">
