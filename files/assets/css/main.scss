@@ -454,6 +454,16 @@
   justify-content: space-between;
   .layout_short {
     width: 45%;
+    h2 {
+      font: normal normal bold 27px/35px Merriweather Sans;
+      a {
+        color: $darkblue;
+        transition: color 250ms;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
   }
 }
 
@@ -546,10 +556,15 @@
     text-transform: uppercase;
     font-weight: 600;
     position: relative;
-    margin-left: 20px;
-    margin-top: 60px;
+ /*   margin-left: 20px;*/
+    margin-top: 25px;
+    margin-bottom: 0;
     font-size: 25px;
-    &:before {
+    background: #5DA4DF;
+    display: inline-block;
+    color: white;
+    padding: 8px 10px;
+  /*  &:before {
       position: absolute;
       content: "";
       left: -18px;
@@ -558,7 +573,7 @@
       top: 9px;
       background: url("/files/assets/layout/dot.svg") no-repeat;
       background-size: 13px;
-    }
+    }*/
   }
   img {
     filter: brightness(0) invert(58%) sepia(76%) saturate(297%) hue-rotate(173deg);
@@ -940,7 +955,7 @@
     top: 45%;
   }
   .mod_article:not(.banner-image) .ce_text {
-    width: 100%;
+    width: 90%;
   }
   .benefit-contain .benefit-box .ce_image.image-text.block::after {
     height: 50px;
