@@ -77,6 +77,8 @@
       }
       strong {
         color: $blue;
+        font-weight: 300;
+        font-size: 18px;
       }
     }
   }
@@ -100,6 +102,8 @@
   }
   strong {
     color: $blue;
+    font-weight: 300;
+    font-size: 18px;
   }
   .icon {
     border: none;
@@ -138,7 +142,8 @@
       margin: 0 auto 42px;
 
       .navigation-left, .navigation-middle,
-      .navigation-middle-right, .navigation-right {
+      .navigation-middle-right, .navigation-right,
+      .navigation-middle-project{
         width: 100%;
       }
     }

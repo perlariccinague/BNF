@@ -120,6 +120,10 @@
   .mod_article#Ihr-Benefit .ce_accordion .accordion {
     padding: 5px 20px;
   }
+
+  .mod_article:not(#Ihr-Benefit, .banner-image) .ce_accordion .accordion {
+    padding: 30px 0;
+  }
 }
 
 
