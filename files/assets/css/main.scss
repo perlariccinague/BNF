@@ -694,7 +694,7 @@
 
 
 
-#progress {
+#progress, #btn-home {
   position: fixed;
   bottom: 75px;
   right: 130px;
@@ -722,6 +722,24 @@
     }
   }
 }
+
+#btn-home {
+  right: 210px;
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  transition: background-color 250ms;
+  img {
+    width: 45px;
+  }
+  &:hover {
+    background-color: #d1dfe6;
+  }
+}
+
 
 .mod_article:not(.banner-image) .ce_text.apply-now-button {
   width: 200px;
