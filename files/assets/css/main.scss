@@ -963,6 +963,17 @@
     width: 60px;
   }
 
+  #btn-home {
+    right: 0;
+    width: 55px;
+    height: 55px;
+    bottom: 80px;
+    left: 10px;
+    img {
+      width: 30px;
+    }
+  }
+
   .image-left, .text-right {
     width: 100%;
   }
