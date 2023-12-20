@@ -51,6 +51,11 @@
             max-height: 300px;
           }
         }
+        &.image-hoch {
+          img {
+            max-height: 100%;
+          }
+        }
       }
     }
     .slider-control {
